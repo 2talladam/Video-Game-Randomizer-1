@@ -1,20 +1,30 @@
-index.<!DOCTYPE html>
-<link rel="stylesheet" href="./assets/style.css">
-<link rel="javascript" href=".assets/script.js">
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Video Game Randomizer</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./assets/style.css">
     </head>
+
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <header>
+            <h1 style="text-align:center;">Welcome to the Random Game Generator!</h1>
+        </header>
+
+        <div class="enterGameBox">
+            <h2>Enter A Game:</h2>
+             <textarea id="EnterGame" name="Enter A Game:" rows="3" cols="50" placeholder='Type the name of your game, then click "Add Game"'></textarea>
+             <button type="button">Add Game</button>
+        </div>
+
+        <div class="gameListBox">
+            <textarea id="EnterGame" name="Enter A Game:" rows="3" cols="50"></textarea>
+            <button type="button">Reset</button>
+            <button type="button">Randomize</button>
+        </div>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
