@@ -4,26 +4,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Video Game Randomizer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/style.css">
     </head>
 
     <body>
-        <header>
-            <h1 style="text-align:center;">Welcome to the Random Game Generator!</h1>
-        </header>
-
-        <div class="enterGameBox">
-            <h2>Enter A Game:</h2>
-             <textarea id="EnterGame" name="Enter A Game:" rows="3" cols="50" placeholder='Type the name of your game, then click "Add Game"'></textarea>
-             <button type="button">Add Game</button>
-        </div>
-
-        <div class="gameListBox">
-            <textarea id="EnterGame" name="Enter A Game:" rows="3" cols="50"></textarea>
-            <button type="button">Reset</button>
-            <button type="button">Randomize</button>
+        <div class="card">
+            <h1>Games Randomizer</h1>
+            <form id="input" method="POST">
+                <label for="game">Add a Game:</label>
+                <input type="text" placeholder="Add game!" name="game" id="game" />
+            </form>
+            <p>Amount of games: <span id="game-count">0</span></p>
+            <button id="random" onclick="randomGame()">Randomize!</button>
+            <ul id="game-list"></ul>
         </div>
         <script src="./assets/script.js"></script>
     </body>
