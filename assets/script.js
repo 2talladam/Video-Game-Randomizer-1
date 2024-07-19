@@ -2,8 +2,7 @@ const game = document.querySelector('#game');
 const input = document.querySelector('#input');
 const gameList = document.querySelector('#game-list');
 const gameCount = document.querySelector('#game-count');
-var modal = document.getElementById('myModal')
-var span = document.getElementsByClassName("close")[0];
+
 
 let games = [];
 
@@ -70,14 +69,5 @@ function randomGame(){
 
 init();
 
-span.onclick = function() {
-    modal.style.display = "none";
-  }
 
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  
 
