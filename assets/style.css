@@ -1,0 +1,117 @@
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "", sans-serif;
+    background-color: #001b44;
+    color: white;
+}
+
+label, p {
+    font-size: 20px;
+}
+
+input {
+    height: 25px;
+    width: 33%;
+    padding: 6px;
+    margin-top: 10px;
+    font-size:  2em;
+    border: 2px solid #24272b;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #24272b;
+}
+
+li {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color:  #001b44;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+li:before {
+    content: "\200B";
+    position: absolute;
+}
+
+li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li button {
+    float: right;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    background-color: #a92005;
+    color: white;
+    font-size: 1em;
+}
+
+.card {
+    display: block;
+    background-color: #004BA8;
+    border: 2px solid #24272b;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 80vw;
+}
+
+body button {
+    font-size: 30px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
