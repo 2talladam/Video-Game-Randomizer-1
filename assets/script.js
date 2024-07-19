@@ -62,7 +62,7 @@ gameList.addEventListener('click', function (event) {
 function randomGame(){
     const random = Math.floor(Math.random() * games.length)
     console.log(random, games[random]);
-    modal.style.display = "block";
+    
     
 };
 
