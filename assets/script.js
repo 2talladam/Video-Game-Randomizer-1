@@ -63,7 +63,13 @@ gameList.addEventListener('click', function (event) {
 function randomGame(){
     const random = Math.floor(Math.random() * games.length)
     console.log(random, games[random]);
+    const modalBody = document.getElementById('modalBody');
+    modalBody.textContent = games[random];
+    modal.show();
 };
+
+const modal = new bootstrap.Modal (document.querySelector('#exampleModal'));
+
 document.addEventListener('DOMContentLoaded', function() {
     const modalBtn = document.getElementById('modalBtn');
     const modal = document.getElementById('modal');
@@ -89,6 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.getElementById('modal');
             modal.style.display = 'none';
     }
+    const modalCloseButton = document.getElementById('closeModalButton')
+
+console.log(modalCloseButton);
+modalCloseButton.addEventListener('click', function(){
+    console.log('here');
+    modal.hide();
+})
+console.log(modalCloseButton.click)
 });
 
 
