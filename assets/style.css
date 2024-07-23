@@ -79,3 +79,40 @@ li button {
 body button {
     font-size: 30px;
 }
+.modalBtn{
+    background-color:#004BA8;
+    color:#fff
+}
+.modalBtn:hover{
+    background:#24272b;
+}
+
+.modal{
+   display:none;
+   position:fixed;
+   z-index:1;
+   left:0;
+   top:0;
+   height:100%;
+   width:100%;
+   overflow: auto;
+   background-color:rgba(0,0,0,0.5)
+}
+.modal-content{
+    background-color:#001b44 ;
+    margin: 20% auto;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px rgba(0,0, 0, 0.2),0 7px 20px  rgba(0,0, 0, 0.17);
+}
+.closeBtn{
+    color:#8d8c8c;
+    float: right;
+    font-size:30px;
+}
+.closeBtn:hover,.closeBtn:focus{
+color:red;
+text-decoration:none;
+cursor:pointer;
+}

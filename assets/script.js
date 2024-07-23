@@ -2,9 +2,10 @@ const game = document.querySelector('#game');
 const input = document.querySelector('#input');
 const gameList = document.querySelector('#game-list');
 const gameCount = document.querySelector('#game-count');
-
+const closeBtn = document.getElementById('closebtn');
 
 let games = [];
+
 
 function renderGames() {
     gameList.innerHTML = '';
@@ -62,12 +63,35 @@ gameList.addEventListener('click', function (event) {
 function randomGame(){
     const random = Math.floor(Math.random() * games.length)
     console.log(random, games[random]);
-    
-    
 };
+document.addEventListener('DOMContentLoaded', function() {
+    const modalBtn = document.getElementById('modalBtn');
+    const modal = document.getElementById('modal');
+
+    modalBtn.addEventListener('click', function() {
+        openModal();
+    });
+
+    function openModal() {
+        if (modal) {
+            modal.style.display = 'block';
+        } else {
+            console.error('Modal element not found');
+        }
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementsByClassName('closeBtn')[0];
+        closeBtn.addEventListener('click', function() {
+            closeModal();
+        });
+    function closeModal() {
+        const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+    }
+});
 
 
 init();
-
 
 
