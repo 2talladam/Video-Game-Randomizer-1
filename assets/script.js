@@ -63,7 +63,23 @@ gameList.addEventListener('click', function (event) {
 function randomGame(){
     const random = Math.floor(Math.random() * games.length)
     console.log(random, games[random]);
+    const modalBody = document.getElementById("modalBody") 
+    modalBody.textContent = games[random];
+    modal.show();
 };
+
+const modal = new bootstrap.Modal (document.querySelector('#exampleModal'),{ 
+    backdrop: false, 
+});
+
+const modalCloseButton = document.querySelector('#closeModalButton')
+
+console.log(modalCloseButton)
+modalCloseButton.addEventListener('click', function(){modal.hide(); 
+
+})
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const modalBtn = document.getElementById('modalBtn');
     const modal = document.getElementById('modal');
