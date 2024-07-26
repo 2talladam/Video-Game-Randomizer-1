@@ -23,7 +23,11 @@ input {
 }
 
 h1 {
+    padding: 40px;
     text-align: center;
+    background: #13293d;
+    color: #fff
+
 }
 
 ul {
@@ -79,6 +83,7 @@ li button {
 body button {
     font-size: 30px;
 }
+
 .modalBtn{
     background-color:#004BA8;
     color:#fff
