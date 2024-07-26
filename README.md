@@ -4,9 +4,9 @@
 
 This is an application that picks a random game from a list that the user provides
 
--Motivation: When we get together to play a game, we often have a hard time deciding which game to play.
--We built this project to shorten the amount of time we spend deciding which game to play, which leaves us with more time to actually play. 
--After the user enters a list of possible games, the application will pick one game at random from the list that was provided. 
+- Motivation: When we get together to play a game, we often have a hard time deciding which game to play.
+- We built this project to shorten the amount of time we spend deciding which game to play, which leaves us with more time to actually play. 
+- After the user enters a list of possible games, the application will pick one game at random from the list that was provided. 
 
 ## Installation
 
@@ -22,7 +22,7 @@ Our application can be installed through github.
 ## Credits
 
 Collaborators: 
--Jesse Lehrer: https://github.com/Lehrer16
--Adam Kotzian: https://github.com/2talladam
--Arthur Gillette: https://github.com/agilletteDU
--Isaac Chamberlain: https://github.com/IMChamberlain
+- Jesse Lehrer: https://github.com/Lehrer16
+- Adam Kotzian: https://github.com/2talladam
+- Arthur Gillette: https://github.com/agilletteDU
+- Isaac Chamberlain: https://github.com/IMChamberlain
