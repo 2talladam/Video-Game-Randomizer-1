@@ -14,7 +14,7 @@ label, p {
 }
 
 input {
-    height: 25px;
+    height: 37px;
     width: 33%;
     padding: 6px;
     margin-top: 10px;
@@ -121,6 +121,7 @@ color:red;
 text-decoration:none;
 cursor:pointer;
 }
+
 footer {
     font-weight: bold;
     width: 100%;
@@ -129,4 +130,4 @@ footer {
     color: maroon;
     background-color: gold;
     translate: 150px 200px;
-} 
+}
