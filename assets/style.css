@@ -121,3 +121,13 @@ color:red;
 text-decoration:none;
 cursor:pointer;
 }
+
+footer {
+    font-weight: bold;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: maroon;
+    background-color: gold;
+    translate: 150px 200px;
+}
