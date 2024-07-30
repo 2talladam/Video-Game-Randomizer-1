@@ -123,11 +123,16 @@ cursor:pointer;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
     color: maroon;
-    background-color: gold;
-    translate: 150px 200px;
+    background-color: rgba(255, 217, 0, 0.89);
+    translate: 0px 200px;
 }
