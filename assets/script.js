@@ -60,12 +60,20 @@ gameList.addEventListener('click', function (event) {
     }
 });
 
-function randomGame(){
-    const random = Math.floor(Math.random() * games.length)
-    const modalBody = document.getElementById("modalBody") 
-    modalBody.textContent = games[random];
-    modal.show();
+function randomGame() {
+    const modalBody = document.getElementById("modalBody");
+
+
+    if (games.length === 0) {
+        modalBody.textContent = "Please add a game!";
+        modal.show();
+    } else {
+        const randomIndex = Math.floor(Math.random() * games.length);
+        modalBody.textContent = games[randomIndex];
+        modal.show();
+    }
 };
+
 
 const modal = new bootstrap.Modal (document.querySelector('#exampleModal'),{ 
     backdrop: false, 

@@ -35,8 +35,18 @@ ul {
     padding: 0;
     background-color: #24272b;
 }
+.card{
+    text-align: center;
+}
+::placeholder{
+    text-align: center;
+}
+.game{
+    text-align: center;
+}
 
 li {
+    text-align: left;
     height: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -46,6 +56,7 @@ li {
     font-size: 1.5em;
     line-height: 1.5;
 }
+
 
 li:before {
     content: "\200B";
